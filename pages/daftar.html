@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script> <!--cdn framework tailwind.css-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar</title>
+</head>
+<!--Untuk halaman pemain menggunakan form input txt-->
+<body class="bg-slate-700">
+    <nav class="bg-gray-800 text-white px-4 py-2 flex justify-between items-center">
+        <a href="#" class="font-bold text-xl">Cibogo FC</a>
+        <ul class="flex space-x-4">
+            <li><a href="?menu=daftar" class="hover:text-gray-400">DAFTAR</a></li>
+            <li><a href="?menu=player" class="hover:text-gray-400">PLAYER</a></li>
+            <li><a href="?menu=home"   class="hover:text-gray-400">HOME</a></li>
+        </ul>
+    </nav>
+    <div class="grid min-h-screen place-items-center">
+        <h1 class="text-xl font-bold">REGISTER CIBOGO FOOTBALL PLAYER</h1>
+        <form class="w-full max-w-md">
+            <div class="mb-6">
+                <label for="nama" class="input input-bordered flex items-center gap-2">Nama : </label>
+                <input type="text" id="nama" name="nama" class="shadow-sm bg-gray-50 border focus:ring-indigo-500 focus:border-indigo-500 rounded-md w-full sm:text-sm p-2.5" required>
+            </div>
+            <div class="mb-6">
+                <label for="umur" class="block text-sm font-medium mb-2">Umur : </label>
+                <input type="number" id="umur" name="umur" class="shadow-sm bg-gray-50 border focus:ring-indigo-500 focus:border-indigo-500 rounded-md w-full sm:text-sm p-2.5" required>
+            </div>
+            <div class="mb-6">
+                <label for="tinggiBadan" class="block text-sm font-medium mb-2">Tinggi Badan (cm) : </label>
+                <input type="number" id="tinggiBadan" name="tinggiBadan" class="shadow-sm bg-gray-50 border focus:ring-indigo-500 focus:border-indigo-500 rounded-md w-full sm:text-sm p-2.5" required>
+            </div>
+            <div class="mb-6">
+                <label for="posisi" class="block text-sm font-medium mb-2">Posisi yang Di Inginkan: </label>
+                <select id="posisi" name="posisi" class="bg-gray-50 border focus:ring-indigo-500 focus:border-indigo-500 rounded-md w-full sm:text-sm p-2.5" required>
+                    <option value="">Pilih Posisi</option>
+                    <option value="Programmer">STR</option>
+                    <option value="Designer">AWF</option>
+                    <option value="Marketing">IMF</option>
+                    <option value="Lainnya">Back</option>
+                </select>
+            </div>
+            <button type="submit" class="inline-flex items-center px-4 py-2 bg-indigo-500 text-white font-bold rounded-md shadow hover:bg-indigo-700 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                Kirim Formulir
+            </button>
+        </form>
+    </div>
+</body>
+</html>
